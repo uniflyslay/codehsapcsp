@@ -1,0 +1,20 @@
+import random
+
+set_size(480, 400)
+
+
+# This graphics program should draw a square. 
+# The fill color should be randomly choosen from
+# the COLORS list
+
+SIDE_LENGTH = 100
+x = get_width() / 2 
+y = get_height() / 2 
+COLORS = [Color.red, Color.orange, Color.yellow, Color.green, Color.blue, 
+        Color.purple, Color.black, Color.gray]
+        
+
+s = Rectangle(SIDE_LENGTH,SIDE_LENGTH)
+s.set_position(x,y)
+s.set_color(random.choice(COLORS))
+add(s)
