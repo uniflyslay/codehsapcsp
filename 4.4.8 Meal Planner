@@ -1,0 +1,13 @@
+breakfast = "Avocado Toast"
+lunch = "Pizza"
+dinner = "Steak"
+
+meal = input("choose a meal(breakfast, lunch, dinner) ")
+if meal == "breakfast":
+    print("I reccommend " +breakfast)
+if meal == "lunch":
+    print("I reccommend " +lunch)
+if meal == "dinner":
+    print("I reccommend " +dinner)
+elif:
+    print("Choose one of them")
