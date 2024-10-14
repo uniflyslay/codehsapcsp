@@ -1,0 +1,12 @@
+x = Circle(100)
+x.set_position(250,250)
+
+
+def keywhyes(event):
+    if event.key == "ArrowLeft":
+        x.set_radius = (get_radius()-10)
+    if event.set == "ArrowRight":
+        x.set_radius = (get_radius()+10)
+        
+add(x)
+add_key_down_handler(keywhyes)
