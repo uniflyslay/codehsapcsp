@@ -1,0 +1,11 @@
+import random
+num_rolls = 0
+while True:
+    num_rolls += 1
+    d1 = random.randint(1, 6)
+    d2 = random.randint(1, 6)
+    print("Rolled: " + str(d1) + " " + str(d2))
+
+    if d1 == 1 and d2 == 1:
+        print("It took you " + str(num_rolls) + " rolls to get snake eyes.")
+        break
