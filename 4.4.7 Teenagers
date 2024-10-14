@@ -1,0 +1,5 @@
+a = int(input("what is you age?: "))
+if a <=19 and a >=13:
+    print("Yes you are a teenager")
+else:
+    print("no")
