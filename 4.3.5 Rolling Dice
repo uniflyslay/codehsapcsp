@@ -1,0 +1,6 @@
+q = int(input("First die: "))
+print(q)
+z = int(input("Second die: "))
+print(z)
+rolled_doubles = z == q
+print("Rolled doubles: "+ str(rolled_doubles))
