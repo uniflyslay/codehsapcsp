@@ -1,0 +1,7 @@
+# Enter your code here
+x = int(input("What is your frist number?: "))
+z = int(input("What is your second number?: "))
+sum = 0
+for i in range(x, z + 1):
+    sum += i
+    print(sum)
