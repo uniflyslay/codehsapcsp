@@ -1,2 +1,1 @@
-hi poookies
-dont forget to change the variables ♥
+might aswell upload it
