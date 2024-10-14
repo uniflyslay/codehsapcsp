@@ -1,0 +1,4 @@
+has_enough_units = False
+has_met_requirements = False
+can_graduate = has_enough_units and has_met_requirements 
+print("Can graduate?: " + str(can_graduate))
