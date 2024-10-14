@@ -1,0 +1,5 @@
+p= int(input("Points per game? "))
+r= int(input("Rebounds per game? "))
+a= int(input("Assists per game? "))
+al= p>=10 and r>=10 and a>=10 or p>=25
+print("Is all star? " + str(al))
