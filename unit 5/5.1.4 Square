@@ -1,0 +1,6 @@
+# Enter your code here
+def square(x):
+    squarex = x*x
+    print(squarex)
+square(5)
+square(5)

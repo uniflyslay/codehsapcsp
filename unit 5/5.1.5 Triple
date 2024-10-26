@@ -1,0 +1,6 @@
+# Enter your code here
+def triple(x):
+    triplex = x*3
+    print(triplex)
+triple(5)
+triple(5)

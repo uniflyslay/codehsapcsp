@@ -1,0 +1,9 @@
+# Enter your code here
+def minVal(z1,z2):
+    if z1 < z2:
+        return z1
+    if z1 > z2:
+        return z2
+print(minVal(5,9))
+print(minVal(4,1))
+print(minVal(520,90))

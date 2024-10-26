@@ -1,0 +1,25 @@
+# This program should draw a stop light
+
+LIGHT_RADIUS = 25
+STOPLIGHT_WIDTH = 100
+STOPLIGHT_HEIGHT = 250
+BUFFER = 75
+
+# Implement a function that draws a single circle 
+# with radius LIGHT_RADIUS.
+# The circle should be in the center of the screen horizontally.
+# Use the parameters for the y position and color
+def draw_circle(y_pos, color):
+    # Add your code here
+    c = Circle(LIGHT_RADIUS)
+    c.set_color(color)
+    c.set_position(get_width()/2,y_pos)
+    add(c)
+r=Rectangle(STOPLIGHT_WIDTH,STOPLIGHT_HEIGHT)
+r.set_color(Color.gray)
+r.set_position(get_width()/2-50,get_height()/2-125)
+add(r)
+h= get_height()/2  
+draw_circle(h+BUFFER, Color.green)
+draw_circle(h, Color.yellow)
+draw_circle(h-BUFFER, Color.red)

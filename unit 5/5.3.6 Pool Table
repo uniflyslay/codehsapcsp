@@ -1,0 +1,21 @@
+POOL_BALL_RADIUS = 40
+FONT_TYPE = "30pt Arial"
+
+
+# Write your function here that draws a pool ball. (Make sure to use the correct name)
+def draw_pool_ball(color,num,x,y):
+    c = Circle(POOL_BALL_RADIUS)
+    c.set_position(x,y)
+    c.set_color(color)
+    n = Text(num)
+    n.set_position(x-10,y+20)
+    n.set_font(FONT_TYPE)
+    n.set_color(Color.white)
+    add(c)
+    add(n)
+
+
+draw_pool_ball(Color.orange, 5, 100, 100)
+draw_pool_ball(Color.red, 3, 150, 350)
+draw_pool_ball(Color.blue, 2, 250, 140)
+draw_pool_ball(Color.green, 6, 50, 200)

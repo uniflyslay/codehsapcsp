@@ -1,0 +1,8 @@
+# Write a function to draw a horizontal
+# line given a y position and a length
+def horizontal_line(x,z):
+    l = Line(0,x,z,x)
+    add(l)
+horizontal_line(100, 200)
+horizontal_line(200, 100)
+horizontal_line(300, 20)

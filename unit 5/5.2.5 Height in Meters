@@ -1,0 +1,15 @@
+INCHES_TO_CM = 2.54
+CM_TO_METERS = 0.01
+FEET_TO_INCHES = 12
+
+# Enter your code here
+def convert_height_to_meters(feet,inches):
+    ftcon = feet*FEET_TO_INCHES
+    inches= inches+ftcon
+    inchcn = inches*INCHES_TO_CM
+    cmm = inchcn*CM_TO_METERS
+    print(inchcn)
+    print(cmm)
+    
+convert_height_to_meters(5,12)
+convert_height_to_meters(6,15)

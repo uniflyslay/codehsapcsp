@@ -1,0 +1,15 @@
+SENTINEL = 0
+def is_even_number(x):
+    if x%2==0:
+        return True
+    else:
+        return False
+while True:
+    x = int(input("Enter a number: "))
+    if x==SENTINEL:
+        print("Done!")
+        break
+    if is_even_number(x)==True:
+        print("Even")
+    else:
+        print("Odd")
