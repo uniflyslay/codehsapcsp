@@ -1,0 +1,12 @@
+import random
+# Enter your code here
+s = random.randint(1,100)
+x=0
+while s!=x:
+    x=int(input("guess a number 1-100: "))
+    if x<s:
+        print("Too low!")
+    if x>s:
+        print("Too high!")
+    
+print("nice!")
