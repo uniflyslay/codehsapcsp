@@ -1,0 +1,12 @@
+5 shapes 2 different colors 2 different shapes
+circle=Circle(RADIUS)
+circle.set_position(x,y)
+circle.set_color(color)
+add(circle)
+line=line(x1,y1,x2,y2)
+line.set_color(color)
+add(line)
+rectangle=Rectangle(height,width)
+rectangle.set_position(x,y)
+add(rectangle)
+#make 2 other shapes
