@@ -1,0 +1,4 @@
+a local variable is a varible inside a function/loop it is only able to be used within it 
+heres an example
+def veff():
+  x=1
