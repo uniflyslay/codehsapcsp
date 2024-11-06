@@ -1,0 +1,60 @@
+# Constants for body
+HEAD_RADIUS = 35
+BODY_WIDTH = HEAD_RADIUS * 2
+BODY_HEIGHT = 60
+NUM_FEET = 3
+FOOT_RADIUS = (BODY_WIDTH) / (NUM_FEET * 2)
+
+# Constants for eyes
+PUPIL_RADIUS = 4
+PUPIL_LEFT_OFFSET = 8
+PUPIL_RIGHT_OFFSET = 20
+EYE_RADIUS = 10
+EYE_OFFSET = 14
+
+
+# Put your function(s) here
+def draw_ghost(center_x, center_y, color):
+    h = Circle(HEAD_RADIUS)
+    h.set_color(color)
+    h.set_position(center_x,center_y)
+    add(h)
+    b = Rectangle(BODY_WIDTH,BODY_HEIGHT)
+    b.set_position(center_x-HEAD_RADIUS,center_y)
+    b.set_color(color)
+    add(b)
+    f2= Circle(FOOT_RADIUS)
+    f2.set_position(center_x-HEAD_RADIUS/1.5,center_y+BODY_HEIGHT)
+    f2.set_color(color)
+    add(f2)
+    f1=Circle(FOOT_RADIUS)
+    f1.set_position(center_x,center_y+BODY_HEIGHT)
+    f1.set_color(color)
+    add(f1)
+    f3=Circle(FOOT_RADIUS)
+    f3.set_position(center_x+HEAD_RADIUS/1.5,center_y+BODY_HEIGHT)
+    f3.set_color(color)
+    add(f3)
+    eL=Circle(EYE_RADIUS)
+    eL.set_position(center_x+EYE_OFFSET*2-(EYE_RADIUS*2)-(EYE_OFFSET+EYE_RADIUS),center_y)
+    eL.set_color(Color.white)
+    add(eL)
+    eR=Circle(EYE_RADIUS)
+    eR.set_position(center_x+EYE_OFFSET*2-(EYE_RADIUS*1.5),center_y)
+    eR.set_color(Color.white)
+    add(eR)
+    pL=Circle(PUPIL_RADIUS)
+    pL.set_color(Color.blue)
+    pL.set_position(center_x+EYE_OFFSET*2-(EYE_RADIUS*2)-(EYE_OFFSET+EYE_RADIUS)+PUPIL_LEFT_OFFSET/1.3,center_y)
+    add(pL)
+    pR=Circle(PUPIL_RADIUS)
+    pR.set_color(Color.blue)
+    pR.set_position(center_x+EYE_OFFSET*2-(EYE_RADIUS*1.5)+PUPIL_LEFT_OFFSET/1.3,center_y)
+    add(pR)
+center_x = get_width()/2
+center_y = get_height()/2
+draw_ghost(center_x, center_y, Color.red)
+draw_ghost(100, 100, Color.green)
+draw_ghost(370, 150, Color.black)
+draw_ghost(40, 200, Color.orange)
+draw_ghost(300, 50, Color.yellow)
