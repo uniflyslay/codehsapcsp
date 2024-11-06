@@ -1,0 +1,12 @@
+def cf(C):
+    NF = float((1.8*C)+32)
+    return NF
+    print(NF)
+def cc(F):
+    NC = float((F-32)/1.8)
+    return NC
+    print (NC)
+C = int(input("Celcius: "))
+F = int(input("Fahrenheit: "))
+print(cf(C))
+print(cf(F))
