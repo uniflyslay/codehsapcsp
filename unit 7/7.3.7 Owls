@@ -1,0 +1,9 @@
+text="I really like owls. Did you know that an owl's eyes are more than twice as big as the eyes of other birds of comparable weight? And that when an owl partially closes its eyes during the day, it is just blocking out light? Sometimes I wish I could be an owl."
+owl="owl"
+def owl_count(text):
+    text=text.lower()
+    o=list(text.split())
+    c=text.count(owl)
+    return c
+
+owl_count(text)
