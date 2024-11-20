@@ -1,0 +1,9 @@
+# update this function so it replaces all lowercase 'i's in `text` with '!'
+def exclamations(myStr):
+    l = list(myStr)
+    for i in range(len(l)):
+        if l[i] == "i":
+            l[i] = '!'
+    myStr = "".join(l)
+    return myStr
+print(exclamations("skibidi"))

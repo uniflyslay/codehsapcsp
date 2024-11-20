@@ -1,0 +1,7 @@
+import math
+def distance(first_point, second_point):
+    o=(first_point[0]-second_point[0])**2
+    q=(first_point[1]-second_point[1])**2
+    p=(o+q)
+    return math.sqrt(p)
+print (distance((0, 0), (1, 1)))

@@ -1,0 +1,4 @@
+def spell_name(name):
+    spell=list(name)
+    return spell
+print(spell_name("Craig"))
