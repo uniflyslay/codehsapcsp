@@ -1,0 +1,29 @@
+def get_index(w):
+    while True:
+        try:
+            i = int(input("Enter an index (-1 to quit): "))
+            if 0 <= i < len(w) or i == -1:
+                return i
+            print("Invalid index")
+        except ValueError:
+            print("Invalid index")
+
+def get_letter():
+    while True:
+        l = input("Enter a letter: ")
+        if len(l) != 1:
+            print("Must be exactly one character!")
+        elif not l.islower():
+            print("Character must be a lowercase letter!")
+        else:
+            return l
+w = input("Enter a word: ")
+wl = list(w)
+
+while True:
+    i = get_index(wl)
+    if i == -1:
+        break
+    l = get_letter()
+    wl[i] = l
+    print("".join(wl))

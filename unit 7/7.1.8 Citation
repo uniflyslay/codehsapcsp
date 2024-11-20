@@ -1,0 +1,5 @@
+def citation(n):
+    n = str(n[2]) + ", " + str(n[0]) + " "+  str(n[1])
+    return n
+
+print(citation(["Martin", "Luther", "King, Jr"]))

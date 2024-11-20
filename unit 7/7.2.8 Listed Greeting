@@ -1,0 +1,7 @@
+def greeting(user_info):
+    i=user_info.split()
+    return "Hello, "+i[0]+"! I also enjoy "+i[2]+"!"
+print(greeting('Jose 17 hockey'))
+
+aList = [15, "hello", "true"] 
+print(aList[2])
