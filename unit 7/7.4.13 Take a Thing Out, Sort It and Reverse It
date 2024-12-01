@@ -1,0 +1,8 @@
+my_list=["eggplant", "apple", "zucchini", "rambutan", "grapefruit"]
+def remove_sort_reverse(my_list):
+    # perform operations on `my_list` to 
+    my_list.remove("eggplant")
+    my_list.sort()
+    my_list.reverse()
+    return my_list
+print(remove_sort_reverse(my_list))
