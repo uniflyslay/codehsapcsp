@@ -1,0 +1,8 @@
+x=int(input("Number of names: "))  
+l=[]
+for i in range(x):
+    n=input("Name: ")
+    l.append(n)
+print("First name: "+l[0])
+print("Middle names: "+str(l[1:-1]))
+print("Last name: "+l[-1])
