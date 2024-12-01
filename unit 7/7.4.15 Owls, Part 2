@@ -1,0 +1,14 @@
+def o():
+    co = 0
+    l = []
+    text = input("Enter some text: ")
+    text = text.lower()
+    for i, o in enumerate(text.split()):
+        if "owl" in o: 
+            co += 1
+            l.append(i)
+    
+    print("There were " + str(co) + " words that contained 'owl'.")
+    print("They occurred at indices: " + str(l))
+
+o()
