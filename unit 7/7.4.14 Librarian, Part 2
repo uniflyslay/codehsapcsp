@@ -1,0 +1,6 @@
+l=[]
+for i in range (5):
+    x=input("Name: ")
+    l.append(x.split()[-1])
+l.sort()
+print(l)
