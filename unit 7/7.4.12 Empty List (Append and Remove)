@@ -1,0 +1,11 @@
+# Enter your code here
+l=[]
+l.append(3)
+l.append("hello")
+l.append(False)
+print(l[0])
+print(l[1])
+print(l[2])
+l.remove(3)
+l.remove(False)
+print(l)
