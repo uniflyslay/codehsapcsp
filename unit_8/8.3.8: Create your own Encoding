@@ -1,4 +1,4 @@
-100000	f	
+"""100000	f	
 100001	g	
 100010	h	
 100011	i	
@@ -61,3 +61,18 @@
 011101	c	
 011110	d	
 011111	e
+"""
+#you encode it by putting it manually in the window called metadata on the left of the screen 
+#u can edit the amount of bits used aswell
+#this is HELLO WORLD in my binary
+001000
+000101
+001100
+001100
+001111
+000000
+010111
+001111
+010010
+001100
+000100
